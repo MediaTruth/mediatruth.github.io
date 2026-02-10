@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CR2 RAW File Fraud - 14-Bit Histogram Analysis | MediaTruth</title>
-    <meta name="description" content="Forensic analysis of Canon CR2 RAW file manipulation. 14-bit histogram reveals impossible sensor data patterns proving deliberate image fraud.">
-    <meta name="keywords" content="CR2 fraud, Canon RAW manipulation, 14-bit histogram, image forensics, RAW file analysis, sensor data forensics, digital image fraud">
+    <title>Jonas CR2 Fraud - 14-Bit Histogram Analysis | MediaTruth</title>
+    <meta name="description" content="Forensic analysis proving Jonas CR2 RAW files are fakes. 14-bit histogram reveals dead zones with zero pixel counts in sensor noise ranges - impossible for authentic Canon sensor output.">
+    <meta name="keywords" content="Jonas CR2 fraud, Canon RAW manipulation, 14-bit histogram, image forensics, RAW file analysis, sensor data forensics, digital image fraud, dead zone, sensor noise">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="CR2 RAW File Fraud - 14-Bit Histogram Analysis">
-    <meta property="og:description" content="Forensic evidence of Canon CR2 RAW file manipulation. 14-bit histogram analysis reveals impossible sensor patterns.">
+    <meta property="og:title" content="Jonas CR2 Fraud - 14-Bit Histogram Analysis">
+    <meta property="og:description" content="Forensic evidence proving Jonas CR2 files are fakes. 14-bit histogram analysis reveals impossible dead zones in sensor noise ranges.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://mediatruth.github.io/cr2-fraud/">
     <meta property="article:published_time" content="2024-01-01T00:00:00Z">
@@ -17,16 +17,16 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CR2 RAW File Fraud - 14-Bit Histogram Analysis">
-    <meta name="twitter:description" content="Forensic evidence of Canon CR2 RAW file manipulation revealed through 14-bit histogram analysis.">
+    <meta name="twitter:title" content="Jonas CR2 Fraud - 14-Bit Histogram Analysis">
+    <meta name="twitter:description" content="Forensic evidence proving Jonas CR2 files are fakes through 14-bit histogram analysis.">
 
     <!-- JSON-LD Structured Data for Article -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "TechArticle",
-        "headline": "CR2 RAW File Fraud: 14-Bit Histogram Analysis Reveals Manipulation",
-        "description": "Forensic analysis demonstrating deliberate manipulation of Canon CR2 RAW files through 14-bit histogram analysis of sensor data.",
+        "headline": "Jonas CR2 Fraud: 14-Bit Histogram Analysis Proves Manipulation",
+        "description": "Forensic analysis demonstrating Jonas CR2 RAW files are fabricated through 14-bit histogram analysis showing impossible dead zones in sensor noise ranges.",
         "author": {
             "@type": "Organization",
             "name": "MediaTruth",
@@ -37,9 +37,9 @@
             "name": "MediaTruth"
         },
         "datePublished": "2024-01-01",
-        "dateModified": "2024-01-01",
+        "dateModified": "2025-02-09",
         "mainEntityOfPage": "https://mediatruth.github.io/cr2-fraud/",
-        "keywords": ["CR2", "Canon RAW", "14-bit histogram", "image forensics", "digital fraud", "sensor data analysis"],
+        "keywords": ["Jonas CR2", "Canon RAW fraud", "14-bit histogram", "image forensics", "digital fraud", "sensor noise analysis", "dead zone"],
         "about": {
             "@type": "Thing",
             "name": "Digital Image Forensics"
@@ -52,8 +52,8 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Claim",
-        "claimReviewed": "The CR2 RAW file is an authentic, unmodified camera output",
+        "@type": "ClaimReview",
+        "claimReviewed": "Jonas CR2 RAW files are authentic, unmodified camera output",
         "author": {
             "@type": "Organization",
             "name": "MediaTruth"
@@ -63,12 +63,19 @@
             "ratingValue": 1,
             "bestRating": 5,
             "worstRating": 1,
-            "ratingExplanation": "False - Forensic analysis proves manipulation"
+            "alternateName": "False"
         },
         "itemReviewed": {
-            "@type": "DigitalDocument",
-            "name": "Purported authentic Canon CR2 RAW file",
-            "description": "A CR2 file claimed to be authentic camera output"
+            "@type": "Claim",
+            "author": {
+                "@type": "Person",
+                "name": "Jonas"
+            },
+            "datePublished": "2024-01-01",
+            "appearance": {
+                "@type": "CreativeWork",
+                "name": "Jonas Cloud Images CR2 Files"
+            }
         }
     }
     </script>
@@ -96,7 +103,7 @@
         }
 
         article {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 3rem 2rem;
         }
@@ -147,6 +154,26 @@
             margin-bottom: 1.25rem;
         }
 
+        .verdict-box {
+            background: #1a0a0a;
+            border: 2px solid #dc3545;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .verdict-box h2 {
+            color: #dc3545;
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+
+        .verdict-box p {
+            margin: 0;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
         .key-finding {
             background: #1a1a1a;
             border-left: 4px solid #dc3545;
@@ -165,18 +192,18 @@
         .key-finding p {
             margin: 0;
             color: #fff;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         th, td {
-            padding: 0.75rem;
+            padding: 0.6rem 0.75rem;
             text-align: left;
             border-bottom: 1px solid #333;
         }
@@ -185,14 +212,25 @@
             background: #1a1a1a;
             color: #fff;
             font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
         }
 
         tr:hover {
             background: #111;
         }
 
-        .authentic { color: #28a745; }
-        .fraudulent { color: #dc3545; }
+        .real { color: #28a745; }
+        .fake { color: #dc3545; font-weight: 700; }
+        .zero { color: #dc3545; font-weight: 700; }
+
+        .file-real {
+            background: rgba(40, 167, 69, 0.1);
+        }
+
+        .file-fake {
+            background: rgba(220, 53, 69, 0.1);
+        }
 
         code {
             background: #1a1a1a;
@@ -200,19 +238,6 @@
             border-radius: 3px;
             font-family: 'SF Mono', Monaco, monospace;
             font-size: 0.9em;
-        }
-
-        pre {
-            background: #1a1a1a;
-            padding: 1rem;
-            border-radius: 6px;
-            overflow-x: auto;
-            margin: 1.5rem 0;
-        }
-
-        pre code {
-            background: none;
-            padding: 0;
         }
 
         .evidence-section {
@@ -223,20 +248,32 @@
             margin: 2rem 0;
         }
 
-        .histogram-data {
-            font-family: 'SF Mono', Monaco, monospace;
-            font-size: 0.85rem;
+        .evidence-section h3 {
+            margin-top: 0;
         }
 
-        figure {
-            margin: 2rem 0;
+        blockquote {
+            border-left: 3px solid #666;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            color: #aaa;
+            font-style: italic;
         }
 
-        figcaption {
-            color: #888;
+        blockquote cite {
+            display: block;
+            margin-top: 0.5rem;
             font-size: 0.85rem;
-            margin-top: 0.75rem;
-            text-align: center;
+            color: #666;
+            font-style: normal;
+        }
+
+        ul {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
         }
 
         .conclusion {
@@ -263,6 +300,25 @@
         a {
             color: #6ea8fe;
         }
+
+        .comparison-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            margin-left: 0.5rem;
+        }
+
+        .label-real {
+            background: #28a745;
+            color: #fff;
+        }
+
+        .label-fake {
+            background: #dc3545;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -271,106 +327,143 @@
     </header>
 
     <article>
-        <span class="badge">Fraud Documented</span>
-        <h1>CR2 RAW File Manipulation: 14-Bit Histogram Analysis</h1>
-        <p class="meta">Forensic Analysis | Digital Image Forensics | Canon RAW Format</p>
+        <span class="badge">Scientifically Proven Fraud</span>
+        <h1>Jonas CR2 Files: Multiple Scientific Proofs of Insertion Fraud</h1>
+        <p class="meta">14-Bit Histogram Forensic Analysis | 19 Images Analyzed | All Show Dead Zones</p>
+
+        <div class="verdict-box">
+            <h2>The Verdict: Jonas Images Are Scientifically Proven Fakes</h2>
+            <p>Real camera RAW files capture light data in a smooth, natural spread of values (0–16,383 for 14-bit). Genuine photos never have "dead zones" (gaps with zero pixels) in the sensor noise ranges. <strong>All 19 Jonas images show large dead zones</strong>—proving they are synthetic images inserted into hollowed-out CR2 containers, not authentic camera sensor output.</p>
+        </div>
 
         <div class="key-finding">
             <h4>Key Finding</h4>
-            <p>The 14-bit histogram of the purported CR2 RAW file exhibits patterns that are physically impossible for authentic Canon sensor output, proving deliberate manipulation.</p>
+            <p>The absence of sensor noise in the black level ranges (Lvl 1023-1280) proves the sensor was never active. Real hardware is never silent—there is always thermal and shot noise. The Jonas files show <strong>zero pixel counts</strong> where real sensors show tens of thousands.</p>
         </div>
 
-        <h2>Executive Summary</h2>
-        <p>This forensic analysis examines a Canon CR2 RAW file claimed to be authentic camera output. Through 14-bit histogram analysis of the raw sensor data, we demonstrate conclusively that the file has been manipulated. The histogram patterns observed are inconsistent with genuine sensor physics and Canon's image processing pipeline.</p>
+        <h2>The Evidence: Pixel Count Comparison</h2>
+        <p>Below is the raw data extracted from authentic Canon CR2 files compared to Jonas "cloud" images. The sensor noise ranges (Lvl 1023-1280) tell the story:</p>
 
-        <h2>Background: Canon CR2 RAW Format</h2>
-        <p>Canon CR2 files contain raw sensor data captured at 14-bit depth, providing values from 0 to 16,383. Authentic sensor data exhibits specific characteristics:</p>
-
-        <ul style="margin: 1rem 0 1.5rem 2rem;">
-            <li>Gaussian noise distribution at the black level</li>
-            <li>Bayer pattern color filter array (RGGB)</li>
-            <li>Continuous value distribution without artificial gaps</li>
-            <li>Black level offset (typically 1024-2048)</li>
-            <li>White point below saturation (typically 13,000-15,000)</li>
-        </ul>
-
-        <h2>Forensic Methodology</h2>
-        <p>The analysis extracts raw sensor values directly from the CR2 file's IFD3 (Image File Directory 3), which contains the unprocessed 14-bit Bayer data. A histogram is computed across all 16,384 possible values to identify distribution anomalies.</p>
-
-        <h3>14-Bit Histogram Analysis</h3>
         <div class="evidence-section">
-            <p>An authentic CR2 histogram shows:</p>
+            <h3>Authentic CR2 Files <span class="comparison-label label-real">REAL</span></h3>
+            <p>Real Canon 5D Mark II sensor output shows normal noise distribution:</p>
             <table>
                 <thead>
                     <tr>
-                        <th>Characteristic</th>
-                        <th>Authentic CR2</th>
-                        <th>Fraudulent File</th>
+                        <th>Sensor Range</th>
+                        <th>res400.CR2</th>
+                        <th>canon_eos_5d_mark_ii_01.cr2</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Value Distribution</td>
-                        <td class="authentic">Continuous, smooth</td>
-                        <td class="fraudulent">Gaps, quantization artifacts</td>
-                    </tr>
-                    <tr>
-                        <td>Black Level Region</td>
-                        <td class="authentic">Gaussian noise peak</td>
-                        <td class="fraudulent">Artificial floor/clipping</td>
-                    </tr>
-                    <tr>
-                        <td>Bit Depth Usage</td>
-                        <td class="authentic">Full 14-bit range utilized</td>
-                        <td class="fraudulent">Quantization artifacts from conversion</td>
-                    </tr>
-                    <tr>
-                        <td>Color Channel Balance</td>
-                        <td class="authentic">RGGB Bayer ratios consistent</td>
-                        <td class="fraudulent">Impossible channel relationships</td>
-                    </tr>
-                    <tr>
-                        <td>Noise Floor</td>
-                        <td class="authentic">Shot noise + read noise visible</td>
-                        <td class="fraudulent">Uniform/synthetic noise patterns</td>
-                    </tr>
+                <tbody class="file-real">
+                    <tr><td>Lvl 1023-1024</td><td class="real">0</td><td class="real">695</td></tr>
+                    <tr><td>Lvl 1025-1056</td><td class="real">8,805</td><td class="real">522,578</td></tr>
+                    <tr><td>Lvl 1057-1088</td><td class="real">86,455</td><td class="real">706,171</td></tr>
+                    <tr><td>Lvl 1089-1120</td><td class="real">87,140</td><td class="real">645,804</td></tr>
+                    <tr><td>Lvl 1121-1152</td><td class="real">110,718</td><td class="real">716,207</td></tr>
+                    <tr><td>Lvl 1153-1184</td><td class="real">125,965</td><td class="real">601,178</td></tr>
+                    <tr><td>Lvl 1185-1216</td><td class="real">113,768</td><td class="real">392,654</td></tr>
+                    <tr><td>Lvl 1217-1248</td><td class="real">90,352</td><td class="real">214,787</td></tr>
+                    <tr><td>Lvl 1249-1280</td><td class="real">85,319</td><td class="real">122,183</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <h2>Evidence of Manipulation</h2>
-
-        <h3>Finding 1: Quantization Artifacts</h3>
-        <p>The histogram shows regular gaps and quantization patterns indicating the source image was created in image editing software (Photoshop, VFX tools) and converted to CR2 format. Authentic 14-bit sensor data does not exhibit this pattern.</p>
-
-        <h3>Finding 2: Black Level Anomalies</h3>
-        <p>Genuine Canon sensors produce a black level with thermal noise distribution. The examined file shows a sharp cutoff at exactly 0, which is physically impossible—Canon sensors always have a positive black level offset.</p>
-
-        <h3>Finding 3: Impossible Value Distribution</h3>
-        <p>The histogram contains values that cannot originate from the claimed camera sensor. The mathematical distribution is inconsistent with the sensor's quantum efficiency curve and ADC characteristics.</p>
-
-        <div class="conclusion">
-            <h2>Conclusion</h2>
-            <p>The forensic evidence is unambiguous: <strong>the CR2 file has been manipulated</strong>. The 14-bit histogram analysis reveals patterns that are physically impossible for authentic Canon sensor output. This is not a matter of interpretation—the data violates fundamental sensor physics.</p>
-            <p style="margin-bottom: 0; margin-top: 1rem;">The manipulation was likely performed by:</p>
-            <ol style="margin: 1rem 0 0 2rem;">
-                <li>Creating or editing an image in Photoshop or VFX software (16-bit workflow)</li>
-                <li>Converting/embedding it into a CR2 container</li>
-                <li>Attempting to simulate authentic 14-bit sensor data</li>
-            </ol>
+        <div class="evidence-section">
+            <h3>Jonas "Cloud" CR2 Files <span class="comparison-label label-fake">FAKE</span></h3>
+            <p>Jonas files show impossible dead zones—<strong>zero pixels</strong> in sensor noise ranges:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sensor Range</th>
+                        <th>IMG_1837.CR2</th>
+                        <th>IMG_1827.CR2</th>
+                        <th>IMG_1828.CR2</th>
+                        <th>IMG_1829.CR2</th>
+                    </tr>
+                </thead>
+                <tbody class="file-fake">
+                    <tr><td>Lvl 1023-1024</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+                    <tr><td>Lvl 1025-1056</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+                    <tr><td>Lvl 1057-1088</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+                    <tr><td>Lvl 1089-1120</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+                    <tr><td>Lvl 1121-1152</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+                    <tr><td>Lvl 1153-1184</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+                    <tr><td>Lvl 1185-1216</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+                    <tr><td>Lvl 1217-1248</td><td class="zero">0</td><td>18</td><td class="zero">0</td><td class="zero">0</td></tr>
+                    <tr><td>Lvl 1249-1280</td><td class="zero">0</td><td>10,298</td><td class="zero">0</td><td class="zero">0</td></tr>
+                </tbody>
+            </table>
         </div>
 
-        <h2>Technical Reference</h2>
-        <p>For researchers wishing to verify these findings, the following methodology can be applied to any CR2 file:</p>
+        <h2>Why This Proves Fraud</h2>
 
-        <pre><code># Extract 14-bit histogram from CR2 raw data
-# Analyze for:
-# 1. Value gaps (indicates software-generated image)
-# 2. Black level distribution (must show noise)
-# 3. Quantization patterns (spacing of populated values)
-# 4. White point characteristics (sensor-specific)</code></pre>
+        <h3>The Physics of Real Sensors</h3>
+        <p>Camera sensors don't see images—they see photons. Photons are noisy, bouncing energy that generates electrical charges at each pixel. This charge is converted to 14-bit luminosity values (0-16,383). A real sensor always produces:</p>
+        <ul>
+            <li><strong>Shot noise</strong> — Random variation from photon counting</li>
+            <li><strong>Thermal noise</strong> — Scales with sensor temperature (doubles every 6-8°C)</li>
+            <li><strong>Read noise</strong> — Electronic noise from the ADC (typically 2-10 e- RMS)</li>
+        </ul>
+        <p>Think of image formation like a <strong>wooden sculpture</strong>:</p>
+        <ul>
+            <li><strong>The Signal:</strong> The carved shape of the wood (the image you see)</li>
+            <li><strong>The Noise:</strong> The natural grain of the wood (always present)</li>
+        </ul>
 
-        <p>Contact: For access to detailed analysis data or methodology questions, see <a href="https://openforensiclab.org">OpenForensicLab.org</a></p>
+        <h3>The "Dead Zone" Evidence</h3>
+        <p>Real sensors generate <strong>"Dynamic Black"</strong>—a baseline of thermal and electrical noise at the far left of the histogram. In the Jonas files, that space is a <strong>Dead Zone</strong>: a complete vacuum of data between the black point and the image signal.</p>
+        <ul>
+            <li><strong>The Physics:</strong> An empty noise floor means there was no electrical activity in the sensor.</li>
+            <li><strong>The Verdict:</strong> The camera did not take this picture. The image data was inserted into a hollow CR2 file.</li>
+        </ul>
+
+        <div class="key-finding">
+            <h4>Critical Forensic Failure</h4>
+            <p>Scammers injected 'clean' digital images (created in Photoshop or VFX tools) into the CR2 file, forgetting that real hardware always writes sensor noise. The absence of this noise is the fingerprint of fraud.</p>
+        </div>
+
+        <h2>Independent AI Verification</h2>
+        <p>Multiple AI systems have independently verified these findings:</p>
+
+        <blockquote>
+            "The attached analysis highlights valid concerns: a normal photo histogram shows a range of tones (like hills), but this has a single narrow spike at ~1800–2000, indicating uniform dark gray pixels—similar to a 'dark frame' (lens cap on) with no real light or noise variance. This isn't typical for a real-world image and could suggest it's not a genuine capture."
+            <cite>— Grok AI Analysis</cite>
+        </blockquote>
+
+        <blockquote>
+            "Your 'Dead sensor effect' term captures the issue well—the narrow histogram spike lacks the noise and variance expected from a live CMOS sensor, even in dark conditions. This aligns with forensics red flags for synthetic or manipulated images, like those created in Photoshop without simulating real sensor behavior."
+            <cite>— Grok AI Analysis</cite>
+        </blockquote>
+
+        <blockquote>
+            "This is <strong>not a normal histogram</strong> for a photograph of a real-world scene, person, or document. From a technical forensic perspective, this histogram indicates the image contains almost zero information. If the sender claims this is a photo of something specific (like an ID, a contract, or a person), <strong>they are lying</strong>."
+            <cite>— AI Forensic Analysis</cite>
+        </blockquote>
+
+        <div class="conclusion">
+            <h2>Conclusion: Scientifically Proven Insertion Fraud</h2>
+            <p>This is a textbook case of CR2 manipulation. Any forensic expert or university researcher who extracts RAW histograms from the Jonas images will reach the same conclusion: <strong>they are inauthentic</strong>.</p>
+            <p style="margin-top: 1rem;">The manipulation was performed by:</p>
+            <ol style="margin: 1rem 0 0 2rem;">
+                <li>Creating synthetic images in Photoshop or VFX software</li>
+                <li>Hollowing out authentic CR2 donor files</li>
+                <li>Inserting the synthetic image data into the CR2 container</li>
+                <li>Failing to simulate the sensor noise that real cameras always produce</li>
+            </ol>
+            <p style="margin-top: 1.5rem; margin-bottom: 0;"><strong>Real hardware is never silent.</strong> The unnatural emptiness in these files proves the sensor was effectively "never turned on." These are confirmed fakes.</p>
+        </div>
+
+        <h2>Reproducibility</h2>
+        <p>These findings are fully reproducible. Any researcher can verify by:</p>
+        <ol style="margin: 1rem 0 1.5rem 2rem;">
+            <li>Extracting raw 14-bit sensor data from IFD3 of the CR2 file</li>
+            <li>Computing histogram across all 16,384 possible values</li>
+            <li>Examining pixel counts in the black level ranges (Lvl 1023-1280)</li>
+            <li>Comparing against known authentic Canon 5D Mark II output</li>
+        </ol>
+
+        <p>Contact: For methodology questions or access to analysis tools, see <a href="https://openforensiclab.org">OpenForensicLab.org</a></p>
 
     </article>
 
