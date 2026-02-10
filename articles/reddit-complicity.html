@@ -3,244 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platform Complicity: How Reddit Suppressed Forensic Evidence | MediaTruth</title>
-    <meta name="description" content="Documented analysis of how Reddit moderation was used to suppress legitimate forensic findings and protect fraudulent content from expert scrutiny.">
-    <meta name="keywords" content="Reddit moderation, content suppression, forensic evidence, platform accountability, moderation abuse, censorship">
+    <title>Reddit Complicit in Hiding Canon RAW Editing Vulnerability? | MediaTruth</title>
+    <meta name="description" content="A security disclosure about legacy RAW CR2 image hacking on Reddit gets deleted. Documentation of how Reddit suppressed forensic evidence exposing RAW file fabrication.">
+    <meta name="keywords" content="Reddit moderation, CR2 vulnerability, RAW file forgery, content suppression, forensic evidence, platform accountability, sensor noise analysis, disinformation">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Platform Complicity: How Reddit Suppressed Forensic Evidence">
-    <meta property="og:description" content="Documented timeline of how Reddit moderation was weaponized to suppress legitimate forensic findings.">
+    <meta property="og:title" content="Reddit Complicit in Hiding Canon RAW Editing Vulnerability?">
+    <meta property="og:description" content="A security disclosure about legacy RAW CR2 image hacking on Reddit gets deleted. The question is: Why?">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://mediatruth.github.io/articles/reddit-complicity.html">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Platform Complicity: How Reddit Suppressed Forensic Evidence">
-    <meta name="twitter:description" content="Documented timeline of how Reddit moderation was weaponized to suppress legitimate forensic findings.">
+    <meta name="twitter:title" content="Reddit Complicit in Hiding Canon RAW Editing Vulnerability?">
+    <meta name="twitter:description" content="A security disclosure about legacy RAW CR2 image hacking on Reddit gets deleted.">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Platform Complicity: How Reddit Suppressed Forensic Evidence",
-        "description": "Analysis of how social media moderation systems were used to suppress legitimate forensic findings about image manipulation.",
+        "headline": "Reddit Complicit in Hiding Canon RAW Editing Vulnerability?",
+        "description": "A security disclosure about legacy RAW CR2 image hacking on Reddit gets deleted. Documentation of platform suppression of forensic security research.",
         "author": {
-            "@type": "Organization",
-            "name": "MediaTruth",
-            "url": "https://mediatruth.github.io"
+            "@type": "Person",
+            "name": "CasualObserver"
         },
         "publisher": {
             "@type": "Organization",
             "name": "MediaTruth"
         },
-        "datePublished": "2024-01-01",
+        "datePublished": "2026-02-09",
         "mainEntityOfPage": "https://mediatruth.github.io/articles/reddit-complicity.html",
-        "keywords": ["Reddit", "moderation", "censorship", "forensic evidence", "platform accountability"]
+        "keywords": ["Reddit", "CR2", "RAW file forgery", "platform accountability", "forensic evidence", "disinformation", "sensor noise"]
     }
     </script>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #d0d0d0;
+            background: #fff;
+            color: #222;
             line-height: 1.8;
-        }
-
-        header {
-            border-bottom: 1px solid #222;
-            padding: 1.5rem 2rem;
-        }
-
-        .logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        article {
             max-width: 800px;
             margin: 0 auto;
-            padding: 3rem 2rem;
+            padding: 2rem;
         }
-
-        .badge {
-            display: inline-block;
-            background: #0d6efd;
-            color: #fff;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 0.25rem 0.75rem;
-            border-radius: 3px;
-            margin-bottom: 1rem;
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
         }
-
+        .logo {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #222;
+            text-decoration: none;
+        }
         h1 {
             font-size: 2.25rem;
             font-weight: 700;
-            color: #fff;
             margin-bottom: 1rem;
             line-height: 1.3;
         }
-
         .meta {
             color: #666;
             font-size: 0.9rem;
             margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #222;
         }
-
         h2 {
             font-size: 1.5rem;
-            color: #fff;
+            font-weight: 700;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
         }
-
         h3 {
             font-size: 1.2rem;
-            color: #fff;
+            font-weight: 600;
             margin-top: 2rem;
             margin-bottom: 0.75rem;
         }
-
         p {
             margin-bottom: 1.25rem;
         }
-
-        .timeline {
-            border-left: 2px solid #333;
-            margin: 2rem 0;
-            padding-left: 2rem;
-        }
-
-        .timeline-event {
-            position: relative;
-            margin-bottom: 2rem;
-        }
-
-        .timeline-event::before {
-            content: '';
-            position: absolute;
-            left: -2.35rem;
-            top: 0.5rem;
-            width: 12px;
-            height: 12px;
-            background: #0d6efd;
-            border-radius: 50%;
-        }
-
-        .timeline-date {
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 0.25rem;
-        }
-
-        .timeline-title {
+        strong {
             font-weight: 600;
-            color: #fff;
+        }
+        ul, ol {
+            margin: 1rem 0 1.5rem 1.5rem;
+        }
+        li {
             margin-bottom: 0.5rem;
         }
-
-        .timeline-desc {
-            color: #aaa;
-            font-size: 0.95rem;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem 0;
+            border: 1px solid #eee;
         }
-
+        a {
+            color: #0066cc;
+        }
         blockquote {
-            border-left: 3px solid #444;
+            border-left: 4px solid #ddd;
             padding-left: 1.5rem;
             margin: 1.5rem 0;
-            color: #aaa;
+            color: #444;
             font-style: italic;
+            background: #f9f9f9;
+            padding: 1rem 1.5rem;
         }
-
-        .evidence-box {
-            background: #111;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 1.5rem;
+        .highlight {
+            background: #fff3cd;
+            padding: 1rem 1.5rem;
+            border-left: 4px solid #ffc107;
             margin: 1.5rem 0;
         }
-
-        .evidence-box h4 {
-            color: #0d6efd;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.75rem;
-        }
-
-        .pattern-list {
-            margin: 1.5rem 0;
-        }
-
-        .pattern-item {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            padding: 1rem;
-            background: #111;
-            border-radius: 6px;
-        }
-
-        .pattern-icon {
-            font-size: 1.5rem;
-        }
-
-        .pattern-content h4 {
-            color: #fff;
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .pattern-content p {
-            color: #888;
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
-        .conclusion {
-            background: linear-gradient(135deg, #0a0a1a, #0a0a0a);
-            border: 1px solid #0d6efd;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-
-        .conclusion h2 {
-            color: #0d6efd;
-            margin-top: 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            border-top: 1px solid #222;
-            color: #666;
-            font-size: 0.875rem;
-        }
-
-        a {
-            color: #6ea8fe;
-        }
-
-        /* TODO markers for content to be filled in */
-        .todo {
-            background: #332700;
-            border: 1px dashed #665200;
-            padding: 1rem;
-            border-radius: 4px;
+        .question {
+            font-weight: 600;
+            color: #333;
             margin: 1rem 0;
-            font-family: monospace;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #666;
             font-size: 0.9rem;
-            color: #ffcc00;
+        }
+        .resources {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .resources ul {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -250,113 +150,141 @@
     </header>
 
     <article>
-        <span class="badge">Analysis</span>
-        <h1>Platform Complicity: How Reddit Suppressed Forensic Evidence</h1>
-        <p class="meta">Platform Accountability | Content Moderation Analysis</p>
+        <h1>Reddit Complicit in Hiding Canon RAW Editing Vulnerability?</h1>
+        <p class="meta">By CasualObserver | February 2026</p>
 
-        <h2>Summary</h2>
-        <p>This article documents how Reddit's moderation system was used to suppress legitimate forensic analysis of image manipulation. When scientific evidence threatened to expose fraud, the platform's mechanisms were weaponized to silence the findings rather than address them.</p>
+        <h2>A Security Disclosure about legacy RAW CR2 Image hacking on Reddit gets deleted. The Question Is: Why?</h2>
 
-        <h2>Background</h2>
-        <p>The forensic analysis of <a href="/cr2-fraud/">Canon CR2 RAW file manipulation</a> produced conclusive evidence of fraud through 14-bit histogram analysis. When this evidence was presented on Reddit, a pattern of suppression emerged.</p>
+        <p>Are we not allowed to expose vulnerabilities, frauds, scams, and Disinformation on your platform Reddit?</p>
 
-        <div class="todo">
-            [TODO: Add specific subreddit names and dates where evidence was posted]
+        <p>Let's start by thanking Reddit for supporting bad actors, that's complicit by definition, and strengthens my case further.</p>
+
+        <p>There's a vulnerability in how the world understands digital image authenticity. RAW files - the format photographers and forensic analysts trust as "uneditable proof" - can be fabricated from scratch. Not edited. <strong>Created</strong>.</p>
+
+        <p>I built a tool to demonstrate this: <a href="https://cr2editor.web.app">https://cr2editor.web.app</a></p>
+
+        <p>Within hours of posting about it on Reddit, my account was terminated. My communities were banned. My posts - containing forensic analysis, histograms, and scientific evidence - were erased.</p>
+
+        <p><strong>No warning. No policy citation. No appeal.</strong></p>
+
+        <h2>The Vulnerability</h2>
+
+        <p>Camera RAW files (CR2, NEF, ARW) are treated as tamper-proof because they contain unprocessed sensor data. Courts accept them. Journalists trust them. The public believes "RAW = authentic."</p>
+
+        <p><strong>This assumption is false.</strong></p>
+
+        <p>Using techniques documented since 2016 (libraw, dcraw), anyone can:</p>
+
+        <ol>
+            <li>Hollow out a legitimate CR2 file</li>
+            <li>Insert a synthetic image (Photoshop, Blender)</li>
+            <li>Produce a file that passes casual inspection</li>
+        </ol>
+
+        <p>The only forensic signature that exposes this fraud? <strong>Sensor noise analysis.</strong> Real cameras produce thermal noise, shot noise, read noise - a "noise floor" visible in histogram analysis. Synthetic insertions lack this floor entirely.</p>
+
+        <h2>The Evidence Reddit Deleted</h2>
+
+        <p>My post contained forensic analysis of 19 suspicious cloud images. The findings:</p>
+
+        <p><strong>Real Canon 5D Mark II histogram (14-bit):</strong></p>
+        <img src="images/reddit-004.png" alt="Real Canon 5D Mark II 14-bit histogram showing normal sensor noise distribution">
+
+        <p><strong>Suspected fake (Jonas cloud image):</strong></p>
+        <img src="images/reddit-006.png" alt="Jonas fake cloud image histogram showing dead zone - zero pixels in noise floor">
+
+        <p><strong>Zero pixels in the noise floor.</strong> A physical impossibility for a functioning sensor.</p>
+
+        <p>The physics is simple: CMOS sensors are never silent. Thermal energy, electrical fluctuations, and photon shot noise guarantee activity even in complete darkness. A histogram showing absolute zero in these ranges means the sensor was never active. The image was inserted into a hollow container.</p>
+
+        <p><strong>This is what I posted. This is what Reddit deleted.</strong></p>
+
+        <h2>The Disinformation Threat Model</h2>
+
+        <p>Disinformation operations require three components:</p>
+
+        <ol>
+            <li><strong>Fabricated evidence</strong> - Images, documents, recordings that appear authentic</li>
+            <li><strong>Distribution network</strong> - Platforms where content spreads</li>
+            <li><strong>Suppression mechanism</strong> - Systems that silence anyone who exposes the fabrication</li>
+        </ol>
+
+        <p>RAW file forgery provides the fabricated evidence. Social media provides distribution. And when platforms delete forensic analysis exposing the methodology?</p>
+
+        <p><strong>They become the suppression mechanism.</strong></p>
+
+        <p>Reddit isn't neutral here. By deleting posts that explain <em>how</em> RAW files can be faked and <em>how</em> to detect fakes, Reddit actively protects the operational model of disinformation campaigns.</p>
+
+        <h2>The AI Training Problem</h2>
+
+        <p>Reddit licenses its data to AI companies. Every post, comment, and discussion feeds models that will shape how future systems understand truth, evidence, and authenticity.</p>
+
+        <p>When Reddit scrubs forensic security research while leaving disinformation intact, it poisons the training data. AI systems learn that certain technical discussions are "violations" while fabricated narratives are acceptable.</p>
+
+        <p><strong>This isn't hypothetical. It's happening now.</strong></p>
+
+        <h2>What I Posted (Before Deletion)</h2>
+
+        <h3>Post 1: Forensic Analysis</h3>
+
+        <blockquote>
+            "Real camera raw files capture light data in a smooth, natural spread of values. Genuine photos never have big 'dead zones' (gaps with zero pixels). Jonas images show exactly that - entire 19 images show large dead zones, unnatural gaps and peaks - suggesting they're inserted synthetic images into a hollowed out CR2 container."
+        </blockquote>
+
+        <h3>Post 2: Educational Tool</h3>
+
+        <blockquote>
+            "This EDUCATIONAL TOOL is to promote critical thinking and demonstrate how easily narrative disinformation can be manufactured."
+            <br><br>
+            <em>CR2 Creation App - 2016 scripts. Reproduced Jonas Cloud fakes 100%.</em>
+            <br><br>
+            <a href="https://cr2editor.web.app">https://cr2editor.web.app</a>
+        </blockquote>
+
+        <img src="images/reddit-009.png" alt="CR2 Editor tool interface showing synthetic RAW file creation">
+
+        <p>The tool at <a href="https://cr2editor.web.app">cr2editor.web.app</a> exists so anyone can verify this vulnerability themselves. Create a synthetic CR2. Examine its histogram. Compare to authentic camera output. The difference is unmistakable.</p>
+
+        <p><strong>Reddit's response? Termination. Community bans. Complete erasure.</strong></p>
+
+        <h2>The Pattern</h2>
+
+        <p>I created a new account. Posted once about CR2 research. Banned within minutes.</p>
+
+        <p>This isn't spam filtering. This isn't community moderation. This is targeted suppression of specific technical content.</p>
+
+        <div class="highlight">
+            <p class="question">What policy prohibits explaining that camera RAW files can be fabricated?</p>
+            <p class="question">Who benefits from keeping this vulnerability hidden?</p>
+            <p class="question">Why does forensic security research trigger instant termination while actual disinformation thrives?</p>
         </div>
 
-        <h2>Timeline of Events</h2>
-        <div class="timeline">
-            <div class="timeline-event">
-                <div class="timeline-date">[DATE]</div>
-                <div class="timeline-title">Initial Forensic Findings Posted</div>
-                <div class="timeline-desc">Technical analysis demonstrating CR2 manipulation was posted with full methodology and evidence.</div>
-            </div>
+        <h2>Verify It Yourself</h2>
 
-            <div class="timeline-event">
-                <div class="timeline-date">[DATE]</div>
-                <div class="timeline-title">Post Removed / Account Action</div>
-                <div class="timeline-desc">[Description of moderation action taken]</div>
-            </div>
+        <p>The tool is live: <a href="https://cr2editor.web.app">https://cr2editor.web.app</a></p>
 
-            <div class="timeline-event">
-                <div class="timeline-date">[DATE]</div>
-                <div class="timeline-title">Appeal Denied</div>
-                <div class="timeline-desc">[Description of appeal process and outcome]</div>
-            </div>
+        <p>Upload a Photoshop image. Select a donor CR2. Generate a synthetic RAW file.</p>
 
-            <div class="todo">
-                [TODO: Fill in specific timeline events with dates and details]
-            </div>
+        <p>Then examine the histogram. You'll see exactly what the scammers see - and exactly what they don't want you to understand.</p>
+
+        <p><strong>RAW files are not proof. They never were. The only question is whether platforms will let you know that, or delete you for saying it.</strong></p>
+
+        <div class="resources">
+            <h3>Resources</h3>
+            <ul>
+                <li>Tool: <a href="https://cr2editor.web.app">https://cr2editor.web.app</a></li>
+                <li>Detection method: 14-bit histogram analysis of optical black region (1023-1280 DN)</li>
+                <li>Full forensic evidence: <a href="/cr2-fraud/">CR2 RAW File Fraud Analysis</a></li>
+                <li>Forensic Script: <a href="/cr2-fraud/scripts/LumPlot14Bit1023.py">LumPlot14Bit1023.py</a></li>
+            </ul>
+            <p style="margin-top: 1rem; margin-bottom: 0;"><em>Reddit deleted this research. MediaTruth hasn't.</em></p>
         </div>
-
-        <h2>Patterns of Suppression</h2>
-
-        <div class="pattern-list">
-            <div class="pattern-item">
-                <div class="pattern-icon">🚫</div>
-                <div class="pattern-content">
-                    <h4>Removal Without Explanation</h4>
-                    <p>Posts containing forensic evidence removed without specific rule citation.</p>
-                </div>
-            </div>
-
-            <div class="pattern-item">
-                <div class="pattern-icon">🔇</div>
-                <div class="pattern-content">
-                    <h4>Shadow Suppression</h4>
-                    <p>Content visible to poster but hidden from community view.</p>
-                </div>
-            </div>
-
-            <div class="pattern-item">
-                <div class="pattern-icon">⚖️</div>
-                <div class="pattern-content">
-                    <h4>Asymmetric Enforcement</h4>
-                    <p>Rules applied to forensic evidence but not to the fraudulent content being exposed.</p>
-                </div>
-            </div>
-
-            <div class="pattern-item">
-                <div class="pattern-icon">🔄</div>
-                <div class="pattern-content">
-                    <h4>Appeal Theater</h4>
-                    <p>Appeal mechanisms exist but provide no meaningful review or recourse.</p>
-                </div>
-            </div>
-        </div>
-
-        <h2>Evidence of Coordination</h2>
-        <div class="todo">
-            [TODO: Add specific evidence of coordinated suppression - screenshots, timing patterns, etc.]
-        </div>
-
-        <h2>The Broader Pattern</h2>
-        <p>This case is not isolated. Platform moderation systems consistently protect established narratives over empirical truth. When forensic evidence challenges accepted content:</p>
-
-        <ul style="margin: 1rem 0 1.5rem 2rem;">
-            <li>Technical expertise is dismissed as "harassment"</li>
-            <li>Evidence is removed as "misinformation"</li>
-            <li>Experts are banned while fraudsters remain</li>
-            <li>Appeals are denied without substantive review</li>
-        </ul>
-
-        <div class="conclusion">
-            <h2>Conclusion</h2>
-            <p>Reddit's moderation system functioned not as a neutral arbiter of community standards, but as a mechanism to suppress forensic evidence and protect fraudulent content. This represents a failure of platform responsibility and enables ongoing deception.</p>
-            <p style="margin-top: 1rem; margin-bottom: 0;">The forensic evidence stands regardless of platform suppression. The 14-bit histogram analysis is verifiable, reproducible, and conclusive. Removing posts does not change sensor physics.</p>
-        </div>
-
-        <h2>References</h2>
-        <ul style="margin: 1rem 0 1.5rem 2rem;">
-            <li><a href="/cr2-fraud/">CR2 RAW File Fraud - 14-Bit Histogram Analysis</a></li>
-            <li><a href="https://openforensiclab.org">OpenForensicLab.org - Forensic Tools and Methodology</a></li>
-        </ul>
 
     </article>
 
     <footer>
         <p>MediaTruth - Independent Digital Forensics Research</p>
-        <p style="margin-top: 0.5rem;"><a href="/">Home</a></p>
+        <p><a href="/">Home</a></p>
     </footer>
 </body>
 </html>
