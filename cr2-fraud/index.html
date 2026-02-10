@@ -315,6 +315,25 @@
 
         <img src="images/img-007.png" alt="AI Forensic Analysis - Detailed breakdown of why the histogram is suspicious">
 
+        <h2>Verify It Yourself: Forensic Analysis Script</h2>
+
+        <p>The forensic analysis presented here is fully reproducible. Download the Python script used to generate these 14-bit histograms and data tables:</p>
+
+        <p><strong><a href="scripts/LumPlot14Bit1023.py">Download: LumPlot14Bit1023.py</a></strong></p>
+
+        <p>This script:</p>
+        <ul>
+            <li>Extracts raw 14-bit sensor data directly from CR2 files using <code>rawpy</code></li>
+            <li>Separates Bayer pattern channels (RGGB) and calculates forensic luminosity</li>
+            <li>Uses a fixed black level threshold (1023) for consistent cross-file comparison</li>
+            <li>Generates precise pixel count tables for the critical 1023-1280 sensor range</li>
+            <li>Produces 16-level bin histograms for detecting "Dead Zone" anomalies</li>
+        </ul>
+
+        <p><strong>Requirements:</strong> Python 3, rawpy, numpy, matplotlib, pandas</p>
+
+        <p>Run it on any Canon CR2 file to verify authentic sensor noise patterns versus synthetic insertions. The Dead Zone evidence is reproducible by anyone with the files and this script.</p>
+
     </article>
 
     <footer>
