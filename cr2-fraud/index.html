@@ -322,7 +322,7 @@
                     <tr>
                         <td>Bit Depth Usage</td>
                         <td class="authentic">Full 14-bit range utilized</td>
-                        <td class="fraudulent">8-bit data scaled to 14-bit</td>
+                        <td class="fraudulent">Quantization artifacts from conversion</td>
                     </tr>
                     <tr>
                         <td>Color Channel Balance</td>
@@ -341,7 +341,7 @@
         <h2>Evidence of Manipulation</h2>
 
         <h3>Finding 1: Quantization Artifacts</h3>
-        <p>The histogram shows regular gaps at intervals of 64 values (2^6), indicating the source image was 8-bit data that was scaled to 14-bit. Authentic 14-bit sensor data does not exhibit this pattern.</p>
+        <p>The histogram shows regular gaps and quantization patterns indicating the source image was created in image editing software (Photoshop, VFX tools) and converted to CR2 format. Authentic 14-bit sensor data does not exhibit this pattern.</p>
 
         <h3>Finding 2: Black Level Anomalies</h3>
         <p>Genuine Canon sensors produce a black level with thermal noise distribution. The examined file shows a sharp cutoff at exactly 0, which is physically impossible—Canon sensors always have a positive black level offset.</p>
@@ -354,9 +354,9 @@
             <p>The forensic evidence is unambiguous: <strong>the CR2 file has been manipulated</strong>. The 14-bit histogram analysis reveals patterns that are physically impossible for authentic Canon sensor output. This is not a matter of interpretation—the data violates fundamental sensor physics.</p>
             <p style="margin-bottom: 0; margin-top: 1rem;">The manipulation was likely performed by:</p>
             <ol style="margin: 1rem 0 0 2rem;">
-                <li>Starting with an 8-bit processed image (JPEG or similar)</li>
+                <li>Creating or editing an image in Photoshop or VFX software (16-bit workflow)</li>
                 <li>Converting/embedding it into a CR2 container</li>
-                <li>Scaling values to appear as 14-bit data</li>
+                <li>Attempting to simulate authentic 14-bit sensor data</li>
             </ol>
         </div>
 
@@ -365,7 +365,7 @@
 
         <pre><code># Extract 14-bit histogram from CR2 raw data
 # Analyze for:
-# 1. Value gaps (indicates bit depth conversion)
+# 1. Value gaps (indicates software-generated image)
 # 2. Black level distribution (must show noise)
 # 3. Quantization patterns (spacing of populated values)
 # 4. White point characteristics (sensor-specific)</code></pre>
